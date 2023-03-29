@@ -3,7 +3,7 @@ import axios from "axios";
 import LoginContext from "./LoginContext";
 
 const LoginState = (props) => {
-  const host = "http://localhost:3005";
+  const host = "https://video-player-mern.vercel.app";
   const [show, setShow] = useState(false);
   const [user, setUser] = useState({ status: "not defined" });
   const [videos, setVideos] = useState({ status: "not defined" });
