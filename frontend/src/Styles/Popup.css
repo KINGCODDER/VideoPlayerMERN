@@ -1,0 +1,88 @@
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.btn-close {
+    position: absolute;
+    font-size: 22px;
+    right: -6px;
+    --bs-btn-close-bg: none;
+    top: -32px;
+    color: white
+}
+
+.modal-dialog {
+    min-width: 768px;
+}
+
+.modal-title {
+    color: #008A45 !important;
+}
+
+.modal-header {
+    max-height: 50px;
+    background: #EFFFF4;
+    border: none;
+}
+
+.popup-heading {
+    font-weight: 700;
+}
+
+.form-container form .input-group {
+    margin-top: -1px;
+    min-height: 46px;
+}
+
+.form-control {
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.form-image img {
+    max-width: 258.16px;
+}
+
+.btn-outline-signup {
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    min-height: 38px;
+    line-height: 16px;
+}
+
+.forgot-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.form-image .warning {
+    letter-spacing: -0.008em;
+}
+
+.popup-header .login-signup-text,
+.popup-header span,
+.popup-header .login-signup-link {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 17px;
+}
+
+.alert {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.hide {
+    display: none !important;
+}

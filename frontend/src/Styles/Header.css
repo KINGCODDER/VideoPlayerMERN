@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    position: relative;
+    min-height: 440px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("../Resources/HeaderImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    position: absolute;
+    bottom: 90px;
+    left: 200px;
+
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    color: white
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}

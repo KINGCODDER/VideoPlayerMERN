@@ -1,0 +1,61 @@
+.card {
+    border-radius: 26px;
+    box-shadow: 0px 11px 20px 0px #56565652;
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 26px;
+}
+
+.card-text {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card:hover .img-container img {
+    transform: scale(1.5);
+    transition: 0.7s;
+}
+
+.card .img-container {
+    overflow: hidden;
+    border-radius: 26px;
+    position: relative;
+}
+
+.img-container .btn {
+    display: none;
+}
+
+.card:hover .img-container .btn-play {
+    display: block;
+    position: absolute;
+    color: white;
+    top: 31%;
+    left: 37%;
+    font-size: 78px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.card:hover .img-container img {
+    transition: 0.5s;
+    filter: brightness(0.5);
+}
+
+.card:hover .card-title {
+    text-decoration: underline;
+}
+
+@media (max-width: 1252px) {
+    .short-card-container {
+        margin: 6px 16px;
+    }
+
+    .short-card-title h5 {
+        font-size: 15px;
+    }
+}

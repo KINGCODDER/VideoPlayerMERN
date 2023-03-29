@@ -1,0 +1,44 @@
+.navbar-container {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    height: 72px;
+}
+
+.navbar {
+    padding: 15px 70px;
+}
+
+.search-box-custom {
+    background: #F2F2F2;
+    border-radius: 21px;
+}
+
+.login-signup-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-signup-link {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login-signup .profile .profile-name {
+    cursor: pointer;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.navbar-mobile {
+    min-height: 65px;
+    margin-bottom: 25px;
+    box-shadow: -2px 7px 20px 1px #a7a7a7;
+    background: gainsboro;
+}
+
+.profilename {
+    font-size: 18px;
+    font-weight: 600;
+}

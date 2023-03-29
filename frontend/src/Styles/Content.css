@@ -1,0 +1,394 @@
+.container {
+    width: fit-content;
+    margin: 32px 140px auto !important;
+}
+
+.content {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.content {
+    border-bottom: none !important;
+}
+
+
+
+
+.active-tab {
+    color: black;
+    border-bottom: 2px solid;
+    font-weight: 400;
+}
+
+.btn-post,
+.btn-post:hover {
+    background: #edeef0;
+}
+
+.btn-join {
+    background: #2f6ce5 !important;
+    color: #ffffff !important;
+}
+
+.location-edit .location .text-date {
+    font-weight: normal;
+}
+
+.location-edit {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.warning {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.location-edit .location .text-date {
+    background: transparent;
+    border: none;
+}
+
+.location-edit .location .text-date:focus {
+    box-shadow: none;
+}
+
+.btn-leave {
+    background: #ffffff;
+    border: 0.8px solid #989899;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #6a6a6b !important;
+}
+
+.recommend-head img {
+    vertical-align: baseline;
+}
+
+.recommend-head h5 {
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.recommend-groups .footer-card .profile .profile-name {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+
+.btn-followed,
+.btn-followed:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-login {
+    background: #2F6CE5;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media (max-width: 5000px) and (min-width: 768px) {
+    .heading-small {
+        display: none !important;
+    }
+
+    .modal-mobile {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+
+        margin: 32px 140px auto !important;
+    }
+
+    .buttons {
+        width: 35% !important;
+    }
+
+
+}
+
+@media (min-width: 1445px) and (max-width: 2561px) {
+    .container {
+        width: 100%;
+        margin: 35px auto !important;
+    }
+
+    .btn-back {
+        display: none;
+    }
+
+    .heading-small {
+        display: none;
+    }
+}
+
+/* @media (min-width: 1695px) {
+
+} */
+
+@media (min-width: 1530px) {
+    .content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1332px) and (min-width: 1200) {
+    .buttons {
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 1201px) and (min-width: 992px) {
+    .buttons {
+        width: 80px;
+    }
+
+    .container {
+        width: 90% !important;
+        margin: 34px 20px !important;
+
+    }
+}
+
+@media (max-width: 993px) {
+    .container {
+        width: 100% !important;
+        margin: 34px auto !important;
+
+    }
+
+    .buttons {
+        width: 50% !important;
+    }
+
+    .tab {
+        width: 46% !important;
+    }
+
+    .finder-container {
+        width: 50% !important;
+    }
+
+    .container {
+        flex-direction: column !important;
+    }
+
+    .short-card-title h5 {
+        font-size: 20px;
+    }
+
+    .suggested-videos {
+        width: 100% !important;
+    }
+
+    .short-card-container {
+        width: 75% !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .navbar-container {
+        display: none !important;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    .header {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("../Resources/headerimagemobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 236px;
+    }
+
+    .header-content {
+        position: absolute;
+        bottom: 22px;
+        text-align: left;
+        line-height: 4px;
+        left: 26px;
+    }
+
+    .btn-back {
+        display: block !important;
+        font-size: 35px;
+        color: white;
+    }
+
+    .btn-outline-join,
+    .btn-outline-join:focus {
+        border: 0.8px solid #FFFFFF;
+        border-radius: 4px;
+        background: transparent;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .tab {
+        display: none !important;
+    }
+
+    .buttons {
+        display: none !important;
+    }
+
+    .finder-container {
+        display: none !important;
+    }
+
+    .card {
+        width: 100% !important;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .container {
+        margin: 0px auto !important;
+    }
+
+    .heading-small {
+        display: block;
+        margin: 10px 30px;
+    }
+
+    .heading-small h2 {
+        float: left;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+
+    }
+
+    .content {
+        margin-top: 0px !important;
+    }
+
+    .heading-small .dropdown .btn-post {
+        color: black;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+        border: none;
+    }
+
+
+
+    .heading {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .heading {
+        margin: 2px !important;
+    }
+
+    .card-badge {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .card-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .profile-name {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .views {
+        display: none !important;
+    }
+
+    #myModal2,
+    #myModal {
+        display: none !important;
+    }
+
+    .form-image {
+        display: none !important;
+    }
+
+    /*
+
+    .modal-body {
+        display: none !important;
+    }
+
+    .modal-content {
+        display: none !important;
+    } */
+    .modal-content {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .modal-header {
+        display: none !important;
+    }
+
+    .modal-dialog {
+        min-width: auto;
+        align-items: flex-end;
+        margin: 0;
+        height: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .btn-close {
+        position: absolute;
+        font-size: 22px;
+        right: 6px;
+        --bs-btn-close-bg: none;
+        top: 0;
+        color: #212529;
+        z-index: 3;
+    }
+
+    .btn-login {
+        width: 50% !important;
+        float: left;
+    }
+
+    .login-signup-link {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
