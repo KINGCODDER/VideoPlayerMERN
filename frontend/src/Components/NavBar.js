@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import logo from "../Resources/whole.png";
 import "../Styles/NavBar.css";
 import Popup from "./Popup";
+import { useLocation, useNavigate } from "react-router-dom";
 import LoginContext from "../Context/LoginContext";
 import ErrorSuccess from "./ErrorSuccess";
 // import profilePic from "../Resources/profile3.png";
@@ -9,7 +10,8 @@ import ErrorSuccess from "./ErrorSuccess";
 function NavBar() {
   const context = useContext(LoginContext);
   const { show, user, verifyUser } = context;
-
+  const navigate = useNavigate();
+  const location = useLocation();
   const signupRef = useRef(null);
 
   useEffect(() => {
@@ -22,7 +24,6 @@ function NavBar() {
         signupRef.current.click();
       }
     }
-    console.clear();
   }, []);
 
   return (
@@ -89,22 +90,28 @@ function NavBar() {
           </div>
         </div>
       </div>
+      {location.pathname !== "/" ? (
+        <div className="navbar-mobile d-flex w-100 justify-content-between align-items-center">
+          <div>
+            <button
+              className="btn btn-transparent mx-4 fs-1"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              <i class="bi bi-arrow-left"></i>
+            </button>
+          </div>
 
-      <div className="navbar-mobile d-flex w-100 justify-content-between align-items-center">
-        <div>
           {user.status === "success" ? (
-            <button className="btn btn-success mx-4">Logout</button>
+            <div className="profilename mx-4">{user.data.user.name}</div>
           ) : (
-            <button className="btn btn-success mx-4">Signup / Login</button>
+            ""
           )}
         </div>
-
-        {user.status === "success" ? (
-          <div className="profilename mx-4">{user.data.user.name}</div>
-        ) : (
-          ""
-        )}
-      </div>
+      ) : (
+        ""
+      )}
     </>
   );
 }

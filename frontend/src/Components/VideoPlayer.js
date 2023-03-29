@@ -71,14 +71,14 @@ function VideoPlayer() {
           </div>
 
           <div className="suggested-videos w-75">
-            {videos ? (
+            {videos.status === "success" ? (
               <>
                 {videos.data
                   .filter((e) => e._id !== params.id)
                   .map((item, index) => {
                     return (
                       <>
-                        <ShortVideoCard video={item} key={index} />
+                        <ShortVideoCard video={item} key={item._id} />
                       </>
                     );
                   })}

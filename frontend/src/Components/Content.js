@@ -9,13 +9,12 @@ function Content() {
   const { getVideos, videos } = context;
 
   useEffect(() => {
-    console.clear();
     getVideos();
   }, []);
 
   return videos.status === "success" ? (
     <>
-      <div className="container px-0 d-flex flex-column">
+      <div className="container px-0 d-flex flex-column overflow-hidden">
         <div className="heading-small my-4 d-flex justify-content-between align-items-center">
           <h2>Videos</h2>
         </div>
@@ -28,7 +27,7 @@ function Content() {
                   return (
                     <VideoCard
                       id={item._id}
-                      key={item._id}
+                      key={index}
                       thumbnail={item.thumbnail}
                       title={item.title}
                       description={item.description}

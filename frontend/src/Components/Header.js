@@ -6,16 +6,22 @@ import Content from "./Content";
 
 function Header() {
   const context = useContext(LoginContext);
-  const { show, videos } = context;
+  const { show, videos, user } = context;
 
-  useEffect(() => {}, []);
   return (
     <>
       <div className="header w-100">
         <div className="nav-small d-flex justify-content-between p-4 align-items-center p-2">
-          <button type="button" className="btn btn-back">
-            <i className="bi bi-arrow-left"></i>
-          </button>
+          {user.status === "success" ? (
+            <span
+              className="profile-name header-name hide"
+              style={{ fontSize: "16px", color: "white" }}
+            >
+              {user.data.user.name}
+            </span>
+          ) : (
+            ""
+          )}
 
           {show ? (
             <button

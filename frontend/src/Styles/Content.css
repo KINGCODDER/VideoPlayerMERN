@@ -204,6 +204,10 @@
         display: none !important;
     }
 
+    .header-name {
+        display: block !important;
+    }
+
     .navbar-mobile {
         display: block;
     }
