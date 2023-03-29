@@ -21,6 +21,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "/frontend", "build", "index.html")),
       function (err) {
         if (err) {
+          console.log(err.message);
           res.status(500).send({
             err,
           });
